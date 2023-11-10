@@ -13,11 +13,26 @@
     </header>
     <section class="centered">
       <form>
-        <button type="submit">Get New Questions</button>
+        <label for="quantity">Number of Questions:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+        
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="9">General Knowledge</option>
+          <option value="10">Books</option>
+          <option value="11">Film</option>
+        </select>
+      
+        <button type="submit">Get Trivia Questions</button>
       </form>
     </section>
     <main class="centered">
-      <!-- Your `.card` elements should show up here. -->
+      <article class="card">
+        <h2>CATEGORY</h2>
+        <p>QUESTION</p>
+        <button>Show Answer</button>
+        <p class="hidden">CORRECT ANSWER</p>
+      </article>
     </main>
   </body>
 </html>
